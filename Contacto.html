@@ -25,6 +25,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/Map.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +41,6 @@
     </div>
     </div>
     <!-- Topbar End -->
-
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
@@ -77,130 +77,103 @@
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
         <div class="container text-center py-5">
-            <h1 class="text-white display-3 mt-lg-5">Acerca de</h1>
+            <h1 class="text-white display-3 mt-lg-5">Contacto</h1>
             <div class="d-inline-flex align-items-center text-white">
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
-
-    <!-- About Start -->
-    <div class="container-fluid py-0">
-        <div class="container py-0">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <h1 class="section-title position-relative text-center mb-5">Tradicional y Delicioso Pizzeria Tan's
-                        2017</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 py-5">
-                    <h4 class="font-weight-bold mb-3">Sobre Nosotros</h4>
-                    <h5 class="text-muted mb-3">Pizza tan’s es el punto de encuentro de los amantes de la pizza. </h5>
-                    <p>Desde el año 2017, contamos con un servicio de excelencia a los distintos usuarios que desean
-                        acompañarnos a comer la mejor calidad de pizza.</p>
-                </div>
-                <div class="col-lg-4" style="min-height: 400px;">
-                    <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/about2.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-4 py-5">
-                    <h4 class="font-weight-bold mb-3">Nuestras características</h4>
-                    <p>Te invitamos a probar nustros diferentes pizzas al mas puro estilo italiano, echa un vistazo a
-                        nuestra carta y descubre la variedad de pizzas¡Irresistibles!</p>
-                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Diversidad, originalidad
-                        y calidad de los productos</h5>
-
-                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Excelente Servicio al
-                        Cliente</h5>
-                </div>
-            </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <h1 class="section-title position-relative text-center mb-5">Encuentra tu Ruta para ir a Pizza Tan's</h1>
         </div>
     </div>
-    <!-- About End -->
 
+    <!-- Header End -->
+    <div class="containter"id="map"></div>
 
-
-    <!-- Team Start -->
+    <!-- Contact Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h1 class="section-title position-relative mb-5">Nuestro Personal</h1>
+                    <h1 class="section-title position-relative text-center mb-5">Contáctanos para cualquier consulta</h1>
                 </div>
-                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="owl-carousel team-carousel">
-                        <div class="team-item">
-                            <div class="team-img mx-auto">
-                                <img class="rounded-circle w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
-                            </div>
-                            <div class="position-relative text-center bg-light rounded px-4 py-5"
-                                style="margin-top: -100px;">
-                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Jonathan Vargas</h3>
-                                <h6 class="text-uppercase text-muted mb-4">Encargado</h6>
-                                <div class="d-flex justify-content-center pt-1">
-                                    <a class="btn btn-outline-secondary btn-social mr-2"
-                                        href="https://www.facebook.com/cindy.arroyo.52493"><i
-                                            class="fab fa-facebook-f"></i></a>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="contact-form bg-light rounded p-5">
+                        <div id="success"></div>
+                        <form action="https://formsubmit.co/4b571f118053ccf7fc9190b80a584a5b" method="POST" target="_blank" role="form" class="form-contacto" >
+                            <input type="hidden" name="_next" value="https://jeffer.14.garcia@gmail.com">
+                            <input type="hidden" name="_subject" value="Formulario Tan´s">
+                            <input type="hidden" name="_autoresponse" value="Autorespuesta">
+                            <legend>Envíanos tu consulta</legend>
+                            <!-- Para profesor, para pruebas, se puede agregar acá otro correo -->
+                            <input type="hidden" name="_cc" value="another@email.com">
+                            <div class="form-row">
+                                <div class="col-sm-6 control-group">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Tu nombre" required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-sm-6 control-group">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Tu correo" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="team-item">
-                            <div class="team-img mx-auto">
-                                <img class="rounded-circle w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
-                            </div>
-                            <div class="position-relative text-center bg-light rounded px-4 py-5"
-                                style="margin-top: -100px;">
-                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Cindy Arroyo</h3>
-                                <h6 class="text-uppercase text-muted mb-4">Encargada</h6>
-                                <div class="d-flex justify-content-center pt-1">
-                                    <a class="btn btn-outline-secondary btn-social mr-2"
-                                        href="https://www.facebook.com/cindy.arroyo.52493"><i
-                                            class="fab fa-facebook-f"></i></a>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="fecha-nacimiento" class="label">Fecha de nacimiento</label>
+                                    <input class="form-control" type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="1950-01-01" required />
+                                    <!-- En este campo se calcula la edad, se asigna como valor al campo y se imprime en consola -->
+                                    <input type="hidden" name="edad" id="edad" class="edad"/>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <label for="urgencia" class="label">Urgencia de Respuesta</label>
+                                    <input class="form-control" type="range" name="urgencia" id="urgencia" class="urgencia" min="1" max="10" oninput="rangevalue.value=value" />
+                                    <output id="rangevalue">6</output>
                                 </div>
                             </div>
-                        </div>
-                        <div class="team-item">
-                            <div class="team-img mx-auto">
-                                <img class="rounded-circle w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
-                            </div>
-                            <div class="position-relative text-center bg-light rounded px-4 py-5"
-                                style="margin-top: -100px;">
-                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Maria Jose Vargas</h3>
-                                <h6 class="text-uppercase text-muted mb-4">Recepcionista</h6>
-                                <div class="d-flex justify-content-center pt-1">
-                                    <a class="btn btn-outline-secondary btn-social mr-2"
-                                        href="https://www.facebook.com/profile.php?id=100082075329388"><i
-                                            class="fab fa-facebook-f"></i></a>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="genero" class="label">Género</label>
+                                    <select id="genero" name="genero" class="form-control select-personalizado" size="4">
+                                        <option value="femenino" selected>Femenino</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="masculino">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <label for="grado-academico" class="label">Grado académico</label>
+                                    <select id="grado-academico" name="grado-academico" class="form-control select-personalizado" size="4" multiple>
+                                        <option value="Educación Primaria">Educación Primaria</option>
+                                        <option value="Bachillerato Secundaria">Bachillerato Secundaria</option>
+                                        <option value="Diplomado Universitario">Diplomado Universitario</option>
+                                        <option value="Bachillerato Universitario">Bachillerato Universitario</option>
+                                        <option value="Licenciatura">Licenciatura</option>
+                                        <option value="Maestría">Maestría</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="team-item">
-                            <div class="team-img mx-auto">
-                                <img class="rounded-circle w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
                             </div>
-                            <div class="position-relative text-center bg-light rounded px-4 py-5"
-                                style="margin-top: -100px;">
-                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Esau Salmeron</h3>
-                                <h6 class="text-uppercase text-muted mb-4">Repartidor</h6>
-                                <div class="d-flex justify-content-center pt-1">
-                                    <a class="btn btn-outline-secondary btn-social mr-2"
-                                        href="https://www.facebook.com/esau.salmeron.79"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                </div>
+                            <div class="control-group">
+                                <textarea class="form-control p-4" rows="6" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
                             </div>
-                        </div>
+                            <div>
+                                <button class="btn btn-primary btn-block py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Team End -->
+    <!-- Contact End -->
 
 
     <!-- Footer Start -->
@@ -244,7 +217,6 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
@@ -257,13 +229,20 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
+        <!-- Template Javascript -->
+    <script src="js/visitanos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+
+
+    <!-- Google API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE7IroOPIVRGmkgTcF8JTuPJJ7KWqHbyI&callback=initMap&libraries=&v=weekly"async></script>
 </body>
 
 </html>

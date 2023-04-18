@@ -1,4 +1,4 @@
-(function ($) {
++(function ($) {
     "use strict";
     
     // Smooth scrolling on the navbar links
