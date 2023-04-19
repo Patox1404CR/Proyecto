@@ -27,7 +27,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="CargarProductos()">
     <!-- Topbar Start -->
     <div class="container-fluid bg-primary py-3 d-none d-md-block">
         <div class="container">
@@ -38,9 +38,7 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- Topbar End -->
-
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
@@ -57,7 +55,7 @@
                         <a href="index.html" class="nav-item nav-link active">Inicio</a>
                         <a href="Productos.html" class="nav-item nav-link">Productos</a>
                         <a href="Acerca.html" class="nav-item nav-link">Acerca de</a>
-                        
+
                     </div>
                     <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
                         <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Pizza</span>Tan's</h1>
@@ -72,94 +70,33 @@
         </div>
     </div>
     <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
-        <div class="container text-center py-5">
-            <h1 class="text-white display-3 mt-lg-5">Galeria</h1>
-            <div class="d-inline-flex align-items-center text-white">
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-    <div class="row justify-content-center">
-        <div class="col-lg-5">
-            <h1 class="section-title position-relative text-center mb-3">Deliciosas pizzas y diferentes sabores para que disfrutes con tu familia</h1>
-        </div>
-    </div>
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid py-5 px-0">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-4 pb-2" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Pepperoni</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Jamon</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Camarones</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Hawaiana</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Suprema</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Margarita</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row m-0 portfolio-container">
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                        <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/portfolio-2.png" alt="">
-                        <a class="portfolio-btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/portfolio-3.png" alt="">
-                        <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/portfolio-4.png" alt="">
-                        <a class="portfolio-btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/portfolio-5.png" alt="">
-                        <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/portfolio-6.png" alt="">
-                        <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
+        <!-- Header Start -->
+        <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+            <div class="container text-center py-5">
+                <h1 class="text-white display-3 mt-lg-5">Galeria</h1>
+                <div class="d-inline-flex align-items-center text-white">
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio End -->
+        <!-- Header End -->
 
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <h1 class="section-title position-relative text-center mb-3">Deliciosas pizzas y diferentes sabores para
+                    que disfrutes con tu familia</h1>
+            </div>
+        </div>
+
+        <!-- Portfolio Start -->
+        <div  class="container-fluid py-5 px-0">
+            <div class="container py-5">
+                <div id="json" class="row m-0 "> 
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+        
     <!-- Footer Start -->
     <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
         <div class="container text-center py-5">
@@ -219,8 +156,10 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/callApi.js"></script>
 </body>
 
 </html>
